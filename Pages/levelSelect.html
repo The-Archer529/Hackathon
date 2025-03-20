@@ -2,8 +2,113 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Level Select</title>
-    <link rel="stylesheet" href="../CSS/style.css">
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+        body{
+            background-color: #404040;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+        table {
+            border: 2px solid #404040;
+            background-color: #404040;
+            height: 600px;
+            width: 600px;
+            border-collapse: collapse;
+        }
+        .grid {
+            display: flex;
+            flex-wrap: wrap;
+            width: 600px;
+            gap: 50px;
+        }
+        .grid button {
+            width: 150px;
+            height: 150px;
+            font-size: 40px;
+            font-weight: bold;
+            background-color: #ff0000;
+            color: black;
+        }
+        .grid button:hover{
+            width: 150px;
+            height: 150px;
+            font-size: 40px;
+            font-weight: bold;
+            background-color: #990000;
+            color: rgb(192, 192, 192);
+        }
+        td {
+            text-align: center;
+            vertical-align: middle;
+        }
+        h1{
+            color: rgb(192, 192, 192);
+            font-size: 80px;
+        }
+    </style>
 </head>
 <body>
-    <button href="level4.html">Level 4</button>
+    <h1>
+        <center>
+            Selecteer een level of selecteer de uitleg astublieft.
+        </center>
+    </h1>
+    <center>
+        <table>
+            <td>
+                <div class="grid">
+                    <a href="Uitleg.html">
+                        <button>
+                            Uitleg
+                        </button>
+                    </a>
+                    <a href="level1.html">
+                        <button>
+                            Level 1
+                        </button>
+                    </a>
+                    <a href="level2.html">
+                        <button>
+                            Level 2
+                        </button>
+                    </a>
+                    <a href="level3.html">
+                        <button>
+                            Level 3
+                        </button>
+                    </a>
+                    <a href="level4.html">
+                        <button>
+                            Level 4
+                        </button>
+                    </a>
+                    <a href="level4.html">
+                        <button>
+                            Level 5
+                        </button>
+                    </a>
+                    <a href="level6.html">
+                        <button>
+                            Level 6
+                        </button>
+                    </a>
+                    <a href="level7.html">
+                        <button>
+                            Level 7
+                        </button>
+                    </a>
+                    <a href="level8.html">
+                        <button>
+                            Level 8
+                        </button>
+                    </a>
+                </div>
+            </td>
+        </table>
+    </center>
 </body>
