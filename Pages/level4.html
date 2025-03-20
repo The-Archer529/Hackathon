@@ -3,34 +3,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Level 4</title>
     <link rel="stylesheet" href="../CSS/style.css">
+    <style>
+        .hidden{ 
+            display: none;
+        }
+        h1{
+            color: rgb(192, 192, 192);
+            font-size: 40px;
+        }
+        .qa p{
+            color: rgb(192, 192, 192);
+            font-size: 20px;
+        }
+        .lotOfText button{
+            height: 145px;
+            width: 145px;
+        }
+    </style>
 </head>
 <body>
-
-    <h2>Escape Room Keuze</h2>
-    <p>Je staat voor een deur. Wat doe je?</p>
-
-    <button onclick="showOptions('option1')">Deur openen</button>
-    <button onclick="showOptions('option2')">Om je heen kijken</button>
-
-    <div id="option1" class="hidden">
-        <p>De deur is op slot. Wat nu?</p>
-        <button onclick="showOptions('option1a')">Slot inspecteren</button>
-        <button onclick="showOptions('option1b')">Terug</button>
+    <h1>
+        <center>
+            De Gehackte Badge
+        </center>
+    </h1>
+    <div id="intro" class="qa">
+        <p>
+            Een medewerker heeft zijn toegangspas verloren en iemand gebruikt deze om binnen te komen.<br>
+            Jouw doel is de ongeautoriseerde persoon te vinden.
+        </p>
+        <button onclick="start()">
+            Start
+        </button>
     </div>
-
-    <div id="option1a" class="hidden">
-        <p>Het slot heeft een codepaneel.</p>
+    <div id="part2" class="qa">
+        <p>
+            Je zit in jouw kantoor en kreeg bericht van een medewerker die zegt: "Ik ben mijn toegangspas verloren, als iemand hem ziet kan je hem terug geven?"<br>
+            Je legt je telefoon neer. Wat ga jij nu doen?
+        </p>
+        <div class="lotOfText">
+            <button onclick="option1()">
+                Je gaat voor de toegangs-pas zoeken
+            </button>
+            <button onclick="option2()">
+                Je gaat verder met werken
+            </button>
+        </div>
     </div>
-
-    <div id="option2" class="hidden">
-        <p>Je vindt een sleutel op de grond.</p>
-        <img href="../Assets/image.png">
-        <button onclick="showOptions('key obtained')">Pak sleutel op</button>
+    <div class="qa" id="option1">
+        <p>
+            Je besluit om de toegangspas te zoeken. Je loopt door het gebouw en vraagt collega's of ze iets hebben gezien. <br>
+            Na een tijdje zoeken, vind je een pas op de grond bij de ingang. Maar is dit echt de verloren pas, of heeft iemand hem hier expres neergelegd?
+        </p>
     </div>
-
-    <div id="key obtained" class="hidden">
-        <p>Je pakt de sleutel op.</p>
+    <div class="qa" id="option2">
+        <p>
+            De ongeautoriseerde persoon heeft al het data van het bedrijf gestolen.<br>
+            Je bent ontslagen en krijgt geen ontslagvergoeding.
+        </p>
     </div>
-
-    <script src="../JS/script.js"></script>
+    <br>
+    <center>
+        <a href="levelSelect.html">
+            <button>
+                Terug
+            </button>
+        </a>
+    </center>
+    <script src="../JS/level4.js"></script>
 </body>
