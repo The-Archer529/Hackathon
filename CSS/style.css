@@ -27,7 +27,7 @@ table {
 .grid {
     display: flex;
     flex-wrap: wrap;
-    width: 300px;
+    width: 275px;
     gap: 25px;
 }
 td {

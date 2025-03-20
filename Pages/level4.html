@@ -15,6 +15,10 @@
             color: rgb(192, 192, 192);
             font-size: 20px;
         }
+        .lotOfText button{
+            height: 145px;
+            width: 145px;
+        }
     </style>
 </head>
 <body>
@@ -25,25 +29,46 @@
     </h1>
     <div id="intro" class="qa">
         <p>
-            Een medewerker heeft zijn toegangspas verloren en iemand gebruikt deze om binnen te komen. <br>
+            Een medewerker heeft zijn toegangspas verloren en iemand gebruikt deze om binnen te komen.<br>
             Jouw doel is de ongeautoriseerde persoon te vinden.
         </p>
         <button onclick="start()">
             Start
         </button>
     </div>
-    <div id="part2" class="qa" class="hidden">
+    <div id="part2" class="qa">
         <p>
-            Je zit in jouw kantoor en kreeg bericht van een medewerker die zegt: "Ik ben mijn toegangspas verloren, als iemand hem ziet kan je hem terug geven?" <br>
+            Je zit in jouw kantoor en kreeg bericht van een medewerker die zegt: "Ik ben mijn toegangspas verloren, als iemand hem ziet kan je hem terug geven?"<br>
             Je legt je telefoon neer. Wat ga jij nu doen?
         </p>
-        <button onclick="option1()">
-            Je gaat voor de toegangspas zoeken.
-        </button>
-        <button onclick="option2()">
-            Je gaat verder met werken
-        </button>
+        <div class="lotOfText">
+            <button onclick="option1()">
+                Je gaat voor de toegangs-pas zoeken
+            </button>
+            <button onclick="option2()">
+                Je gaat verder met werken
+            </button>
+        </div>
     </div>
-
+    <div class="qa" id="option1">
+        <p>
+            Je besluit om de toegangspas te zoeken. Je loopt door het gebouw en vraagt collega's of ze iets hebben gezien. <br>
+            Na een tijdje zoeken, vind je een pas op de grond bij de ingang. Maar is dit echt de verloren pas, of heeft iemand hem hier expres neergelegd?
+        </p>
+    </div>
+    <div class="qa" id="option2">
+        <p>
+            De ongeautoriseerde persoon heeft al het data van het bedrijf gestolen.<br>
+            Je bent ontslagen en krijgt geen ontslagvergoeding.
+        </p>
+    </div>
+    <br>
+    <center>
+        <a href="levelSelect.html">
+            <button>
+                Terug
+            </button>
+        </a>
+    </center>
     <script src="../JS/level4.js"></script>
 </body>
