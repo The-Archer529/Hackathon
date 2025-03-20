@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR code</title>
+    <style>
+        .knoppen{
+            max-width: 400px;
+            margin: auto;
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+        }
+    </style>
+</head>
+<body>
+    <div class="knoppen">
+        <h1>deze pagina is niet beveiligd</h1>
+        <p>wilt u door gaan?</p>
+        <button onclick="Terug()">Terug</button><button onclick="Doorgaan()">Doorgaan</button>
+    </div>  
+    <script>
+        function Terug(){
+            if (Terug) {
+                window.location.href = "/Pages/level2.html";
+        }
+    }
+        function Doorgaan(){
+            alert("je ben gehackt")
+        }
+    </script>
+
+</body>
+</html>
