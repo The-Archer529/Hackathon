@@ -5,3 +5,4 @@ function showOptions(id) {
     else {
         document.getElementById(id).classList.remove("hidden");
     }
+}
