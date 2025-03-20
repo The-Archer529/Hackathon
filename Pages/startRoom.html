@@ -1,0 +1,30 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room 1</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+
+    <h2>Escape Room Keuze</h2>
+    <p>Je staat voor een deur. Wat doe je?</p>
+
+    <button onclick="showOptions('option1')">Deur openen</button>
+    <button onclick="showOptions('option2')">Om je heen kijken</button>
+
+    <div id="option1" class="hidden">
+        <p>De deur is op slot. Wat nu?</p>
+        <button onclick="showOptions('option1a')">Slot inspecteren</button>
+        <button onclick="showOptions('option1b')">Terug</button>
+    </div>
+
+    <div id="option1a" class="hidden">
+        <p>Het slot heeft een codepaneel.</p>
+    </div>
+
+    <div id="option2" class="hidden">
+        <p>Je vindt een sleutel op de grond.</p>
+    </div>
+
+    <script src="../JS/script.js"></script>
+</body>
