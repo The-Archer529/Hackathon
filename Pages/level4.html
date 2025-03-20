@@ -9,31 +9,6 @@
 </head>
 <body>
 
-    <h2>Escape Room Keuze</h2>
-    <p>Je staat voor een deur. Wat doe je?</p>
-
-    <button onclick="showOptions('option1')">Deur openen</button>
-    <button onclick="showOptions('option2')">Om je heen kijken</button>
-
-    <div id="option1" class="hidden">
-        <p>De deur is op slot. Wat nu?</p>
-        <button onclick="showOptions('option1a')">Slot inspecteren</button>
-        <button onclick="showOptions('option1b')">Terug</button>
-    </div>
-
-    <div id="option1a" class="hidden">
-        <p>Het slot heeft een codepaneel.</p>
-    </div>
-
-    <div id="option2" class="hidden">
-        <p>Je vindt een sleutel op de grond.</p>
-        <img href="../Assets/image.png">
-        <button onclick="showOptions('key obtained')">Pak sleutel op</button>
-    </div>
-
-    <div id="key obtained" class="hidden">
-        <p>Je pakt de sleutel op.</p>
-    </div>
 
     <script src="../JS/level4.js"></script>
 </body>
