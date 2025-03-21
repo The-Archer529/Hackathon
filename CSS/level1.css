@@ -1,0 +1,49 @@
+
+
+#escape-room {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #555;
+    padding: 10px;
+    margin: 5px 0;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+li:hover {
+    background-color: #a7a6a6;
+}
+
+#email-info {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #e0e0e0;
+    border-radius: 8px;
+    display: none;
+}
+
+button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
