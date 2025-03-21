@@ -36,16 +36,15 @@
         <p>wilt u doorgaan?</p>
         <button onclick="Terug()">Terug</button><button onclick="Doorgaan()">Doorgaan</button>
     </div>  
+    <script src="../JS/cookies.js"></script>
     <script>
         function Terug(){
-            if (Terug) {
-                window.location.href = "/Pages/level2.html";
+            window.location.href = "/Pages/level2.html";
         }
-    }
         function Doorgaan(){
-            alert("oeps je bent gehackt. als pagina's niet beveiligd zijn kan je ze beter meteen verlaten.")
+            alert("oeps je bent gehackt. als pagina's niet beveiligd zijn kan je ze beter meteen verlaten.");
+            updatePoints(-1); // Trek een punt af
         }
     </script>
-
 </body>
 </html>

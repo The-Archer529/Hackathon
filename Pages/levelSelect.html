@@ -19,11 +19,19 @@
             font-size: 40px;
         }
     </style>
+    <script src="../JS/cookies.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const points = getCookie("points") || 0;
+            document.getElementById('points-display').textContent = `Punten: ${points}`;
+        });
+    </script>
 </head>
 <body>
     <h1>
         Selecteer een level of selecteer de uitleg astublieft.
     </h1>
+    <p id="points-display"></p>
     <center>
         <table>
             <td>
