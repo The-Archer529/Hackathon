@@ -47,8 +47,14 @@
         <p>Wees altijd voorzichtig met QR-codes. Je kunt niet direct zien of ze veilig zijn. Scan dus nooit zomaar een QR-code.</p>
         <p>Je kunt nu door naar het volgende level.</p>
         <br>
-        <a href="levelSelect.html" onclick="updatePoints(1)">Terug</a>
+        <a href="#" onclick="nextLevel()">Volgende Level</a>
     </div>
     <script src="../JS/cookies.js"></script>
+    <script>
+        function nextLevel() {
+            updatePoints(1); // Voeg een punt toe
+            window.location.href = "level3.html"; // Ga naar het volgende level
+        }
+    </script>
 </body>
 </html>
