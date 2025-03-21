@@ -16,128 +16,244 @@
             <p>
                 Jan: 'Hey, heb je de laatste e-mail over het project gezien? Ik heb je wat belangrijke documenten gestuurd.'
             </p>
-            <button onclick="checkJan('vraag')">
-                Vraag meer over de documenten
-            </button>
-            <button onclick="checkJan('vragen')">
-                Vraag waarom hij je niet persoonlijk heeft benaderd
-            </button>
-            <button onclick="checkJan('informatie')">
-                Vraag of je je gegevens moet verstrekken voor toegang tot de documenten
-            </button>
+            <div class="lotOfText">
+                <button onclick="checkJan('vraag')">
+                    Vraag meer over de documenten
+                </button>
+                <button onclick="checkJan('vragen')">
+                    Vraag waarom hij je niet persoonlijk heeft benaderd
+                </button>
+                <button onclick="checkJan('informatie')">
+                    Vraag of je je gegevens moet verstrekken voor toegang tot de documenten
+                </button>
+            </div>
         </div>
         <div id="Jan2-1">
             <p>
                 Jan geeft je wat vage uitleg over de documenten, maar je merkt dat zijn antwoorden geen details bevatten. Dit maakt je een beetje achterdochtig.
             </p>
-            <button onclick="finalChoiceJan('nee')">
-                Geef geen gegevens
-            </button>
-            <button onclick="finalChoiceJan('ja')">
-                Geef je gegevens
-            </button>
+            <div class="lotOfText">
+                <button onclick="finalChoiceJan('nee')">
+                    Geef geen gegevens
+                </button>
+                <button onclick="finalChoiceJan('ja')">
+                    Geef je gegevens
+                </button>
+            </div>
         </div>
         <div id="Jan2-2">
             <p>
                 Jan geeft je een overtuigend antwoord en zegt dat hij altijd efficiënt werkt. Maar het lijkt wel een beetje te soepel te gaan.
             </p>
-            <button onclick="finalChoiceJan('nee')">
-                Geef geen gegevens
-            </button>
-            <button onclick="finalChoiceJan('ja')">
-                Geef je gegevens
-            </button>
+            <div class="lotOfText">
+                <button onclick="finalChoiceJan('nee')">
+                    Geef geen gegevens
+                </button>
+                <button onclick="finalChoiceJan('ja')">
+                    Geef je gegevens
+                </button>
+            </div>
         </div>
         <div id="Jan2-3">
             <p>
                 Jan vraagt je om je persoonlijke gegevens te verstrekken om toegang te krijgen tot de documenten. Dit klinkt een beetje verdacht.
             </p>
-            <button onclick="finalChoiceJan('nee')">
-                Geef geen gegevens
-            </button>
-            <button onclick="finalChoiceJan('ja')">
-                Geef je gegevens
-            </button>
+            <div class="lotOfText">
+                <button onclick="finalChoiceJan('nee')">
+                    Geef geen gegevens
+                </button>
+                <button onclick="finalChoiceJan('ja')">
+                    Geef je gegevens
+                </button>
+            </div>
         </div>
         <div id="Jan3-1">
             <p>
                 Je hebt je gegevens verstrekt aan Jan. Het blijkt dat Jan je probeert te misleiden. Het was een phishingpoging! Je hebt belangrijke informatie prijsgegeven!
             </p>
-            <button onclick='showLisaInteraction()'>
-                Ga door naar Lisa
-            </button>
+            <div class="lotOfText">
+                <button onclick='showLisaInteraction()'>
+                    Ga door naar Lisa
+                </button>
+            </div>
         </div>
         <div id="Jan3-2">
             <p>
                 Je hebt geen gegevens verstrekt en dat was de juiste keuze! Jan was een onbetrouwbare collega.
             </p>
-            <button onclick='showLisaInteraction()'>
-                Ga door naar Lisa
-            </button>
+            <div class="lotOfText">
+                <button onclick='showLisaInteraction()'>
+                    Ga door naar Lisa
+                </button>
+            </div>
         </div>
         <div id="Lisa1">
             <p>
                 Lisa: 'Hey, ik zag een vreemd bestand in je inbox. Heb je dat ontvangen? Ik stuurde het naar je voor de vergadering.'
             </p>
-            <button onclick="checkLisa('bestanden')">
-                Vraag meer over het bestand
-            </button>
-            <button onclick="checkLisa('reden')">
-                Vraag waarom ze het bestand stuurde zonder vooraf te vragen
-            </button>
-            <button onclick="checkLisa('informatie')">
-                Vraag of je je gegevens moet verstrekken om het bestand te openen
-            </button>
+            <div class="lotOfText">
+                <button onclick="checkLisa('bestanden')">
+                    Vraag meer over het bestand
+                </button>
+                <button onclick="checkLisa('reden')">
+                    Vraag waarom ze het bestand stuurde zonder vooraf te vragen
+                </button>
+                <button onclick="checkLisa('informatie')">
+                    Vraag of je je gegevens moet verstrekken om het bestand te openen
+                </button>
+            </div>
         </div>
         <div id="Lisa2-1">
             <p>
                 Lisa legt uit dat het bestand noodzakelijk is voor de vergadering, maar ze kan je niet precies vertellen wat het bestand bevat.
             </p>
-            <button onclick="finalChoiceLisa('nee')">
-                Geef geen gegevens</button>
-            <button onclick="finalChoiceLisa('ja')">
-                Geef je gegevens
-            </button>
+            <div class="lotOfText">
+                <button onclick="finalChoiceLisa('nee')">
+                    Geef geen gegevens
+                </button>
+                <button onclick="finalChoiceLisa('ja')">
+                    Geef je gegevens
+                </button>
+            </div>
         </div>
         <div id="Lisa2-2">
-            
+            <p>
+                Lisa vertelt je dat ze het bestand zomaar heeft gestuurd omdat ze dacht dat je het nodig had. Dit klinkt niet helemaal eerlijk.
+            </p>
+            <div class="lotOfText">
+                <button onclick="finalChoiceLisa('nee')">
+                    Geef geen gegevens
+                </button>
+                <button onclick="finalChoiceLisa('ja')">
+                    Geef je gegevens
+                </button>
+            </div>
         </div>
         <div id="Lisa2-3">
-            
+            <p>
+                Lisa vraagt je om je gegevens om toegang te krijgen tot het bestand. Dit klinkt weer een beetje vreemd.
+            </p>
+            <div class="lotOfText">
+                <button onclick="finalChoiceLisa('nee')">
+                    Geef geen gegevens
+                </button>
+                <button onclick="finalChoiceLisa('ja')">
+                    Geef je gegevens
+                </button>
+            </div>
         </div>
         <div id="Lisa3-1">
-            
+            <p>
+                Je hebt je gegevens verstrekt, maar blijkt dat Lisa je wilde misleiden. Het bestand was een phishingpoging!
+            </p>
+            <div class="lotOfText">
+                <button onclick='showHackerInteraction()'>
+                    Ga door naar de onbekende hacker
+                </button>
+            </div>
         </div>
         <div id="Lisa3-2">
-            
+            <p>
+                Je hebt geen gegevens verstrekt en dat was de juiste keuze! Lisa was een onbetrouwbare collega.
+            </p>
+            <div class="lotOfText">
+                <button onclick='showHackerInteraction()'>
+                    Ga door naar de onbekende hacker
+                </button>
+            </div>
         </div>
         <div id="Hacker1">
-            <p>Een onbekende persoon zegt: 'Hé, ik werk bij het IT-team. Je hebt een nieuw systeem nodig, geef me snel je gegevens om toegang te krijgen.'</p>
-                <button onclick="checkHacker('vraag')">Vraag om meer informatie over het systeem</button>
-                <button onclick="checkHacker('reden')">Vraag waarom hij zo snel gegevens wil ontvangen</button>
-                <button onclick="checkHacker('informatie')">Vraag om je gegevens te geven voor toegang tot het systeem</button>
+            <p>
+                Een onbekende persoon zegt: 'Hé, ik werk bij het IT-team. Je hebt een nieuw systeem nodig, geef me snel je gegevens om toegang te krijgen.'
+            </p>
+            <div class="lotOfText">
+                <button onclick="checkHacker('vraag')">
+                    Vraag om meer informatie over het systeem
+                </button>
+                <button onclick="checkHacker('reden')">
+                    Vraag waarom hij zo snel gegevens wil ontvangen
+                </button>
+                <button onclick="checkHacker('informatie')">
+                    Vraag om je gegevens te geven voor toegang tot het systeem
+                </button>
+            </div>
         </div>
         <div id="Hacker2-1">
-            <p>De onbekende hacker geeft een vaag antwoord en blijft aandringen dat je snel je gegevens moet verstrekken om toegang te krijgen.</p>"
-             <button onclick="finalChoiceHacker('nee')">Geef geen gegevens</button>
-             <button onclick="finalChoiceHacker('ja')">Geef je gegevens</button>
+            <p>
+                De onbekende hacker geeft een vaag antwoord en blijft aandringen dat je snel je gegevens moet verstrekken om toegang te krijgen.
+            </p>
+            <div class="lotOfText">
+                <button onclick="finalChoiceHacker('nee')">
+                    Geef geen gegevens
+                </button>
+                <button onclick="finalChoiceHacker('ja')">
+                    Geef je gegevens
+                </button>
+            </div>
         </div>
         <div id="Hacker2-2">
-            <p>De onbekende hacker zegt dat het dringend is, maar er is iets in zijn antwoord dat je niet helemaal vertrouwt.</p>"
-                <button onclick="finalChoiceHacker('nee')">Geef geen gegevens</button>
-                <button onclick="finalChoiceHacker('ja')">Geef je gegevens</button>
+            <p>
+                De onbekende hacker zegt dat het dringend is, maar er is iets in zijn antwoord dat je niet helemaal vertrouwt.
+            </p>
+            <div class="lotOfText">
+                <button onclick="finalChoiceHacker('nee')">
+                    Geef geen gegevens
+                </button>
+                <button onclick="finalChoiceHacker('ja')">
+                    Geef je gegevens
+                </button>
+            </div>
         </div>
         <div id="Hacker2-3">
-            <p>De onbekende hacker vraagt je om je gegevens te geven. Dit klinkt absoluut niet goed.</p>
-            <button onclick="finalChoiceHacker('nee')">Geef geen gegevens</button>
-              <button onclick="finalChoiceHacker('ja')">Geef je gegevens</button>
+            <p>
+                De onbekende hacker vraagt je om je gegevens te geven. Dit klinkt absoluut niet goed.
+            </p>
+            <div class="lotOfText">
+                <button onclick="finalChoiceHacker('nee')">
+                    Geef geen gegevens
+                </button>
+                <button onclick="finalChoiceHacker('ja')">
+                    Geef je gegevens
+                </button>
+            </div>
         </div>
         <div id="Hacker3-1">
-            <p>Je hebt je gegevens verstrekt, maar blijkt dat de onbekende persoon een hacker is. Je hebt belangrijke gegevens prijsgegeven!</p>
+            <p>
+                Je hebt je gegevens verstrekt, maar blijkt dat de onbekende persoon een hacker is. Je hebt belangrijke gegevens prijsgegeven!
+            </p>
+            <div class="lotOfText">
+                <button onclick='endGame()'>
+                    Zie de uitslag
+                </button>
+            </div>
         </div>
         <div id="Hacker3-2">
-            p>Je hebt geen gegevens verstrekt en dat was de juiste keuze! De onbekende hacker probeerde je te misleiden.</p>
-            <button onclick='endGame()'>Speel opnieuw</button>
+            <p>
+                Je hebt geen gegevens verstrekt en dat was de juiste keuze! De onbekende hacker probeerde je te misleiden.
+            </p>
+            <div class="lotOfText">
+                <button onclick='endGame()'>
+                    Zie de uitslag
+                </button>
+            </div>
+        </div>
+        <div id="End1">
+            <p>
+                Je hebt het spel beëindigd. Let goed op wie je vertrouwd online! Je weet nu dat Jan de phishing-gast was, en dat je je gegevens nooit zomaar moet delen.<br>
+                -50 punten
+            </p>
+        </div>
+        <div id="End2">
+            <p>
+                Je hebt het spel beëindigd. Je hebt je gegevens gedeeld en bent gehackt. Let goed op wie je vertrouwd online!<br>
+                -50 punten
+            </p>
+        </div>
+        <div id="End3">
+            <p>
+                Je hebt het spel beëindigd zonder dat je gegevens hebt gedeeld. Goed gedaan, je hebt geen risico genomen!<br>
+                +100 punten
+            </p>
         </div>
     </section>
     <br>
