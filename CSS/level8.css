@@ -8,20 +8,6 @@
     box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
 }
 
-button {
-    margin: 10px;
-    padding: 10px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-button:hover {
-    background-color: #0056b3;
-}
-
 input {
     padding: 8px;
     margin: 10px;
@@ -66,4 +52,77 @@ input {
     padding: 15px;
     background-color: #222;
     border-radius: 8px;
+}
+
+body{ 
+    background-image: url('https://th.bing.com/th/id/R.1602b26c05ee78120695d592a68b8912?rik=9O1u%2bLpA2RRIQw&riu=http%3a%2f%2fwww.textures4photoshop.com%2ftex%2fthumbs%2fmatrix-code-animation-gif-free-animated-background-716.gif&ehk=WUVCioIV7kR5uuDGvMDZqWHy7xCswZFIHgwKQewHnS4%3d&risl=&pid=ImgRaw&r=0');
+    background-size: cover;
+    height: 100vh;
+    padding:0;
+    margin:0;
+    background-color: #404040;
+    text-align: center;
+}
+
+button {
+    width: 100px;
+    height: 100px;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #ff0000;
+    color: black;
+}
+
+button:hover{
+    width: 100px;
+    height: 100px;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #990000;
+    color: rgb(192, 192, 192);
+}
+
+table {
+    border: 1px solid #404040;
+    background-color: #404040;
+    height: 300px;
+    width: 300px;
+    border-collapse: collapse;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 350px;
+    gap: 25px;
+}
+
+td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+h1{
+    color: rgb(192, 192, 192);
+    font-size: 40px;
+}
+
+p{
+    color: rgb(192, 192, 192);
+    font-size: 20px;
+}
+
+.lotOfText button{
+    height: 150px;
+    width: 150px;
+}
+
+.lotOfText button:hover{
+    height: 150px;
+    width: 150px;
+}
+
+.lotOfText{
+    display: flex;
+    justify-content: center;
 }
