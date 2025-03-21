@@ -34,7 +34,12 @@ let correctWord = "cyberbeveiligheid";
                 document.getElementById('puzzle').style.display = 'none';
             } else if (!updated) {
                 document.getElementById('message').innerText = "Foute letter, probeer opnieuw!";
+                updatePoints(-1); // Trek een punt af
             } else {
                 document.getElementById('message').innerText = "Goede letter!";
+                updatePoints(1); // Voeg een punt toe
+                setTimeout(() => {
+                    window.location.href = "level4.html"; // Ga naar het volgende level
+                }, 2000);
             }
         }

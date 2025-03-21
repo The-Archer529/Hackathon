@@ -43,6 +43,8 @@ function badBadEnd() {
 function option1b2() {
     document.getElementById('option1b').style.display= "none";
     document.getElementById('option1b2').style.display= "block";
+    updatePoints(-1); // Voeg een punt toe
+
 }
 
 
@@ -88,14 +90,22 @@ function option1b1b1() {
 function option1b1a1() {
     document.getElementById('option1b1a').style.display= "none";
     document.getElementById('option1b1a1').style.display= "block";
+    updatePoints(-1); // Voeg een punt toe
+
 }
 
 function Victory() {
     document.getElementById('option1b1a1').style.display= "none";
     document.getElementById('Victory').style.display= "block";
+    updatePoints(1); // Voeg een punt toe
+        setTimeout(() => {
+            window.location.href = "level5.html"; // Ga naar het volgende level
+        }, 2000);
 }
 
 function gearresteerd() {
     document.getElementById('option1a').style.display= "none";
     document.getElementById('gearresteerd').style.display= "block";
+    updatePoints(-1); // Voeg een punt toe
+    
 }
