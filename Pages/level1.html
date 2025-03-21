@@ -1,9 +1,46 @@
+<!DOCTYPE html>
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Level 1</title>
-    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Escape Room</title>
+    <link rel="stylesheet" href="/CSS/level1.css">
+    <script src="../JS/level1.js"></script>
 </head>
 <body>
+    <div id="escape-room">
+        <h1>Escape Room: Vind de Phishing Mail</h1>
+        <p>Je hebt een aantal e-mails ontvangen.</p>
+        <ul id="phishing-emails">
+            <li data-info="PostNL: 
+            Uw pakket is onderweg en wordt vandaag bezorgd. 
+            Wij staan vandaag voor uw deur tussen 12:00 en 18:00.">PostNL: "Pakket onderweg"</li>
+            <li data-info="Rabobank: 
+            Vanaf maart kun je weer belastingaangifte doen. 
+            met de juiste informatie is je aangifte zo gefikst. 
+            Wij helpen je graag om goed voorbereid te zijn.">Rabobank: "Tijd voor je belastingaangifte!"</li>
+            <li data-info="DHL: 
+            weg maar we hebben vastgesteld dat er nog een openstaand bedrag is van €2,00 aan douanekosten. 
+            Om vertraging of retournering te voorkomen vragen wij u vriendelijk om de betaling direct af te ronden.">DHL: "Openstaand bedrag"</li>
+            <li data-info="Werk: 
+            Na twee jaar neem ik afscheid op kantoor, omdat ik een nieuwe uitdaging heb gevonden bij Aventus. 
+            Ik wil jullie bedanken voor de prettige samenwerking en de leerzame momenten. Veel geluk gewenst met alle projecten die nog komen.">Werk: "Vertrek"</li>
+        </ul>
+        <div id="email-info"></div>
 
+        <p>Klik op de e-mail die je denkt dat een phishing mail is.</p>
+        <ul id="emails">
+            <li data-phishing="false">E-mail van PostNL</li>
+            <li data-phishing="false">E-mail van Rabobank</li>
+            <li data-phishing="true">E-mail van DHL</li>
+            <li data-phishing="false">E-mail van je werk</li>
+        </ul>
+        <p id="result"></p>
+
+        <button>Ga Naar Hoofdmenu</button>
+    </div>
+    <script>
+       
+    </script>
 </body>
+</html>
