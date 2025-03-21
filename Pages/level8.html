@@ -1,9 +1,54 @@
+<!DOCTYPE html>
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Level 8</title>
-    <link rel="stylesheet" href="../CSS/style.css">
+    <title>De Interne Mol - Level 8</title>
+    <link rel="stylesheet" href="/CSS/level8.css">
+    <script src="../JS/level8.js"></script>
 </head>
 <body>
+
+    <div class="container">
+        <div class="laptop-frame">
+            <div class="screen">
+                <h1>Escape Room: De Interne Mol</h1>
+                <p>Onderzoek wie de zwakke schakel is binnen het bedrijf en voorkom verdere schade.</p>
+
+                <div class="desktop">
+                    <div class="folder" onclick="openfolder('emails')">📂 E-mails</div>
+                    <div class="folder" onclick="openfolder('files')">📂 Bestanden</div>
+                    <div class="folder" onclick="openfolder('users')">📂 Gebruikers</div>
+                </div>
     
+                <!-- Code puzzel (hintletters uit e-mails) -->
+                <div class="puzzle">
+                    <p><strong>Ontcijfer de geheime code uit de e-mails:</strong></p>
+                    <input type="text" id="codeInput" placeholder="Voer code in">
+                    <button onclick="checkCode()">Check Code</button>
+                    <p id="codeFeedback"></p>
+                </div>
+
+                <!-- Wachtwoord puzzel -->
+                <div class="puzzle">
+                    <p><strong>Wachtwoord van verdachte laptop invoeren:</strong></p>
+                    <input type="text" id="passwordInput" placeholder="Voer wachtwoord in">
+                    <button onclick="checkPassword()">Check</button>
+                    <p id="passwordFeedback"></p>
+                </div>
+
+                <!-- Verdachten selectie -->
+                <div class="suspect">
+                    <h2>Wie is de mol?</h2>
+                    <button onclick="accuse('Jan')">Jan</button>
+                    <button onclick="accuse('Lisa')">Lisa</button>
+                    <button onclick="accuse('Mark')">Mark</button>
+                    <button onclick="accuse('Tom')">Tom</button>
+                    <button onclick="accuse('Eva')">Eva</button>
+                    <button onclick="accuse('Sara')">Sara</button>
+                    <p id="result"></p>
+            </div>
+        </div>
+    </div>
 </body>
+</html>
