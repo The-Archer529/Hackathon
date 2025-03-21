@@ -64,11 +64,13 @@ function option1b1() {
 
 function option1b1a() {
     document.getElementById('option1b1').style.display= "none";
+    document.getElementById('terugNaarKruispunt').style.display= "none";
     document.getElementById('option1b1a').style.display= "block";
 }
 
 function option1b1b() {
     document.getElementById('option1b1').style.display= "none";
+    document.getElementById('terugNaarKruispunt').style.display= "none";
     document.getElementById('option1b1b').style.display= "block";
 }
 
