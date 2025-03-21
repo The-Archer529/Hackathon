@@ -26,7 +26,12 @@ function accuse(suspect) {
     if (suspect === correctSuspect) {
         document.getElementById("result").textContent = "Je hebt de mol gevonden! Mark was de verrader.";
         alert("Gefeliciteerd! Je hebt Level 8 voltooid.");
+        updatePoints(1); // Voeg een punt toe
+        setTimeout(() => {
+            window.location.href = "levelSelect.html"; // Ga naar het level selectiescherm
+        }, 2000);
     } else {
         alert("Verkeerde keuze! De informatie blijft lekken...");
+        updatePoints(-1); // Trek een punt af
     }
 }

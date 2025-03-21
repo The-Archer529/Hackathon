@@ -144,17 +144,23 @@ function endGame() {
         document.getElementById('Hacker3-1').style.display= 'none';
         document.getElementById('Hacker3-2').style.display= 'none';
         document.getElementById('End1').style.display= 'block';
+        updatePoints(-1); // Trek een punt af
     } else if (gegevensGegeven >= 1) {
         document.getElementById('Hacker3-1').style.display= 'none';
         document.getElementById('Hacker3-2').style.display= 'none';
         document.getElementById('End2').style.display= 'block';
+        updatePoints(-1); // Trek een punt af
 
     } else {
         document.getElementById('Hacker3-1').style.display= 'none';
         document.getElementById('Hacker3-2').style.display= 'none';
         document.getElementById('End3').style.display= 'block';
+        updatePoints(1); // Voeg een punt toe
+        setTimeout(() => {
+            window.location.href = "level7.html"; // Ga naar het volgende level
+        }, 2000);
     }
 }
 
 // Start het spel bij het laden van de pagina
-startGame();
+startGame(); 
