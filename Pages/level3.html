@@ -1,9 +1,86 @@
+<!DOCTYPE html>
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Level 3</title>
-    <link rel="stylesheet" href="../CSS/style.css">
+    <title>level 3</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #404040;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: #222;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+        }
+        .wifi-option {
+            background: #444;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px 0;
+            cursor: pointer;
+        }
+        .wifi-option:hover {
+            background: #666;
+        }
+        .hidden {
+            display: none;
+        }
+        .virus-warning {
+            background: red;
+            padding: 15px;
+            border-radius: 5px;
+            color: white;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="container">
+        <h1>Onbeveiligde WiFi</h1>
+        <p>Je ziet een lijst met WiFi-netwerken. Kies verstandig!</p>
+        
+        <div class="wifi-option" onclick="connectWiFi(false)">🔓 Openbare WiFi (Geen wachtwoord nodig)</div>
+        <div class="wifi-option" onclick="connectWiFi(true)">🔒 Veilige WiFi (Met wachtwoord)</div>
+        
+        <div id="virus" class="hidden virus-warning">⚠️ Je hebt een virus opgelopen! Hackers hebben toegang tot je gegevens.</div>
+        <div id="data-leak" class="hidden">
+            <p><strong>Gelekte Gegevens:</strong></p>
+            <p>📧 E-mail: gebruiker@example.com</p>
+            <p>🔢 Wachtwoorden: *********</p>
+            <p>💳 Bankgegevens: 1234-****-****-5678</p>
+            <p>🔍 Dit gebeurt omdat onbeveiligde netwerken hackers in staat stellen om jouw data te onderscheppen. hackers kunnen hier dan bij en bijvoorbeeld jouw bankgegevens stelen en daarmee geld uit je rekening halen.</p>
+            <br>
+            <center>
+                <a href="levelSelect.html">
+                    <button>
+                        Terug
+                    </button>
+                </a>
+            </center>
+        </div>
+    </div>
+
+
+    <script>
+        function connectWiFi(isSecure) {
+            if (!isSecure) {
+                document.getElementById('virus').classList.remove('hidden');
+                setTimeout(() => {
+                    document.getElementById('data-leak').classList.remove('hidden');
+                }, 2000);
+            } else {
+                alert('✅ Je bent veilig verbonden! Dit netwerk is versleuteld en beschermt je gegevens.');
+            }
+        }
+    </script>
 </body>
+</html>
