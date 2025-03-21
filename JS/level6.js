@@ -61,45 +61,38 @@ function finalChoiceJan(choice) {
 // Interactie met Lisa (Betrouwbare collega)
 function showLisaInteraction() {
     currentStep = 2;
-    storyElement.innerHTML = "<p>Lisa: 'Hey, ik zag een vreemd bestand in je inbox. Heb je dat ontvangen? Ik stuurde het naar je voor de vergadering.'</p>";
-    choicesElement.innerHTML = `
-        <button onclick="checkLisa('bestanden')">Vraag meer over het bestand</button>
-        <button onclick="checkLisa('reden')">Vraag waarom ze het bestand stuurde zonder vooraf te vragen</button>
-        <button onclick="checkLisa('informatie')">Vraag of je je gegevens moet verstrekken om het bestand te openen</button>
-    `;
+    document.getElementById('Jan3-1').style.display= 'none';
+    document.getElementById('Jan3-2').style.display= 'none';
+    document.getElementById('Lisa1').style.display= 'block';
 }
 
 // Keuze voor Lisa
 function checkLisa(choice) {
     if (choice === 'bestanden') {
-        storyElement.innerHTML = "<p>Lisa legt uit dat het bestand noodzakelijk is voor de vergadering, maar ze kan je niet precies vertellen wat het bestand bevat.</p>";
-        choicesElement.innerHTML = `
-            <button onclick="finalChoiceLisa('nee')">Geef geen gegevens</button>
-            <button onclick="finalChoiceLisa('ja')">Geef je gegevens</button>
-        `;
+        document.getElementById('Lisa1').style.display= 'none';
+        document.getElementById('Lisa2-1').style.display= 'block';
     } else if (choice === 'reden') {
-        storyElement.innerHTML = "<p>Lisa vertelt je dat ze het bestand zomaar heeft gestuurd omdat ze dacht dat je het nodig had. Dit klinkt niet helemaal eerlijk.</p>";
-        choicesElement.innerHTML = `
-            <button onclick="finalChoiceLisa('nee')">Geef geen gegevens</button>
-            <button onclick="finalChoiceLisa('ja')">Geef je gegevens</button>
-        `;
+        document.getElementById('Lisa1').style.display= 'none';
+        document.getElementById('Lisa2-2').style.display= 'block';;
     } else if (choice === 'informatie') {
-        storyElement.innerHTML = "<p>Lisa vraagt je om je gegevens om toegang te krijgen tot het bestand. Dit klinkt weer een beetje vreemd.</p>";
-        choicesElement.innerHTML = `
-            <button onclick="finalChoiceLisa('nee')">Geef geen gegevens</button>
-            <button onclick="finalChoiceLisa('ja')">Geef je gegevens</button>
-        `;
+        document.getElementById('Lisa1').style.display= 'none';
+        document.getElementById('Lisa2-3').style.display= 'block';;
     }
 }
 
 // Finale keuze bij Lisa
 function finalChoiceLisa(choice) {
     if (choice === 'ja') {
-        storyElement.innerHTML = "<p>Je hebt je gegevens verstrekt, maar blijkt dat Lisa je wilde misleiden. Het bestand was een phishingpoging!</p>";
+        document.getElementById('Lisa2-1').style.display= 'none';
+        document.getElementById('Lisa2-2').style.display= 'none';
+        document.getElementById('Lisa2-3').style.display= 'none';
+        document.getElementById('Lisa3-1').style.display= 'block';
     } else {
-        storyElement.innerHTML = "<p>Je hebt geen gegevens verstrekt en dat was de juiste keuze! Lisa was een onbetrouwbare collega.</p>";
+        document.getElementById('Lisa2-1').style.display= 'none';
+        document.getElementById('Lisa2-2').style.display= 'none';
+        document.getElementById('Lisa2-3').style.display= 'none';
+        document.getElementById('Lisa3-2').style.display= 'block';
     }
-    choicesElement.innerHTML = "<button onclick='showHackerInteraction()'>Ga door naar de onbekende hacker</button>";
 }
 
 // Interactie met de hacker (de echte phishing gast)
