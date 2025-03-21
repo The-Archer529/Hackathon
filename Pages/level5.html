@@ -1,9 +1,79 @@
+<!DOCTYPE html>
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Level 5</title>
+    <title>Level 5: De USB Valstrik</title>
     <link rel="stylesheet" href="../CSS/style.css">
+    <style>
+        #virus-screen {
+            display: none; background: red; color: white; padding: 50px;
+        }
+        #puzzle {
+            display: none; margin-top: 20px;
+        }
+        .post-it {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: yellow;
+            padding: 10px;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+            font-weight: bold;
+            transform: rotate(-5deg);
+        }
+    </style>
 </head>
 <body>
+    <h1>
+        Level 5: De USB Valstrik
+    </h1>
+    <p>
+        Je vindt een onbekende USB-stick op kantoor. Wat doe je?
+    </p>
+    <button onclick="plugInUSB()">
+        USB inpluggen
+    </button>
+    <button onclick="ignoreUSB()">
+        USB negeren
+    </button>
     
+    <div id="virus-screen">
+        <h2>
+            !!! RANSOMWARE VIRUS !!!
+        </h2>
+        <p>
+            Je computer is vergrendeld. Los de puzzel op om het virus te verwijderen.
+        </p>
+        <button onclick="startPuzzle()">
+            Puzzel Oplossen
+        </button>
+    </div>
+    
+    <div id="puzzle">
+        <p>
+            Raad het wachtwoord door letters in te vullen:
+        </p>
+        <p id="hidden-word"></p>
+        <input type="text" id="letter" maxlength="1" placeholder="Voer een letter in">
+        <button onclick="guessLetter()">
+            Probeer
+        </button>
+        <p id="message"></p>
+    </div>
+    
+    <div class="post-it">
+        Wachtwoord: C***r**v****g***d<br>
+        Hint: Het heeft te maken met online veiligheid
+    </div>
+    <br>
+    <br>
+    <a href="levelSelect.html">
+        <button>
+            Terug
+        </button>
+    </a>
+    
+    <script src="../JS/level5.js"></script>
 </body>
+</html>
