@@ -94,22 +94,32 @@
             
         </div>
         <div id="Hacker1">
-            
+            <p>Een onbekende persoon zegt: 'Hé, ik werk bij het IT-team. Je hebt een nieuw systeem nodig, geef me snel je gegevens om toegang te krijgen.'</p>
+                <button onclick="checkHacker('vraag')">Vraag om meer informatie over het systeem</button>
+                <button onclick="checkHacker('reden')">Vraag waarom hij zo snel gegevens wil ontvangen</button>
+                <button onclick="checkHacker('informatie')">Vraag om je gegevens te geven voor toegang tot het systeem</button>
         </div>
         <div id="Hacker2-1">
-            
+            <p>De onbekende hacker geeft een vaag antwoord en blijft aandringen dat je snel je gegevens moet verstrekken om toegang te krijgen.</p>"
+             <button onclick="finalChoiceHacker('nee')">Geef geen gegevens</button>
+             <button onclick="finalChoiceHacker('ja')">Geef je gegevens</button>
         </div>
         <div id="Hacker2-2">
-            
+            <p>De onbekende hacker zegt dat het dringend is, maar er is iets in zijn antwoord dat je niet helemaal vertrouwt.</p>"
+                <button onclick="finalChoiceHacker('nee')">Geef geen gegevens</button>
+                <button onclick="finalChoiceHacker('ja')">Geef je gegevens</button>
         </div>
         <div id="Hacker2-3">
-            
+            <p>De onbekende hacker vraagt je om je gegevens te geven. Dit klinkt absoluut niet goed.</p>
+            <button onclick="finalChoiceHacker('nee')">Geef geen gegevens</button>
+              <button onclick="finalChoiceHacker('ja')">Geef je gegevens</button>
         </div>
         <div id="Hacker3-1">
-            
+            <p>Je hebt je gegevens verstrekt, maar blijkt dat de onbekende persoon een hacker is. Je hebt belangrijke gegevens prijsgegeven!</p>
         </div>
         <div id="Hacker3-2">
-            
+            p>Je hebt geen gegevens verstrekt en dat was de juiste keuze! De onbekende hacker probeerde je te misleiden.</p>
+            <button onclick='endGame()'>Speel opnieuw</button>
         </div>
     </section>
     <br>
