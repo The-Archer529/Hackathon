@@ -5,14 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QR code</title>
     <style>
-        .body {
+        body {
             font-family: Arial, sans-serif;
             text-align: center;
             background-color: #404040;
             color: #fff;
-            text-align: center;
             padding: 20px;
-        
+            min-height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         .knoppen{
             max-width: 400px;
@@ -30,7 +33,7 @@
 <body>
     <div class="knoppen">
         <h1>deze pagina is niet beveiligd</h1>
-        <p>wilt u door gaan?</p>
+        <p>wilt u doorgaan?</p>
         <button onclick="Terug()">Terug</button><button onclick="Doorgaan()">Doorgaan</button>
     </div>  
     <script>
