@@ -1,7 +1,7 @@
-function openFolder(folderName) {
+function openfolder(folderName) {
     let contentDiv = document.getElementById("content");
     let folderContent = {
-        'emails': "<p>📧 CEO: 'Wie lekt onze gegevens? Controleer de bijlagen!'</p>",
+        'emails': "<p>📧 CEO: 'Wie lekt onze gegevens? Controleer de bijlagen!'</p><br><p>📧 Mama: 'Waar ben jij? Ik verwacht je over 4 minuten'</p><br><p>📧 DHL: 'Je paket komt over 10 minuten?'</p>",
         'files': "<p>📂 Document: 'geheime_documenten.pdf' ontdekt op een verdachte laptop.</p>",
         'users': "<p>👤 Verdachte logins: Mark heeft 's nachts ingelogd op de servers.</p>"
     };
@@ -10,24 +10,16 @@ function openFolder(folderName) {
 
 // Codepuzzel
 function checkCode() {
-    let correctCode = "VWI"; // Afgeleid van de eerste letters uit de e-mail hint
+    let correctCode = "410"; // Afgeleid van de eerste letters uit de e-mail hint
     let userInput = document.getElementById("codeInput").value;
     if (userInput === correctCode) {
         alert("Correcte code! De mol is ontmaskerd.");
     } else {
-        alert("Incorrecte code. Probeer het nog eens.");
+        alert("Incorrecte code. Hint is 'Minuten'.");
     }
 }
 
-function checkPassword() {
-    let correctPassword = "utzvcd";
-    let userInput = document.getElementById("passwordInput").value;
-    if (userInput === correctPassword) {
-        alert("Correct wachtwoord!");
-    } else {
-        alert("Incorrect wachtwoord. Probeer het nog eens.");
-    }
-}
+
 
 function accuse(suspect) {
     let correctSuspect = "Mark";
