@@ -16,8 +16,12 @@
             font-size: 20px;
         }
         .lotOfText button{
-            height: 145px;
-            width: 145px;
+            height: 150px;
+            width: 150px;
+        }
+        .lotOfText{
+            display: flex;
+            justify-content: center;
         }
     </style>
 </head>
@@ -43,23 +47,103 @@
         </p>
         <div class="lotOfText">
             <button onclick="option1()">
-                Je gaat voor de toegangs-pas zoeken
+                Je gaat voor de toegangspas zoeken
             </button>
-            <button onclick="option2()">
+            <button onclick="badBadEnd()">
                 Je gaat verder met werken
             </button>
         </div>
     </div>
     <div class="qa" id="option1">
         <p>
-            Je besluit om de toegangspas te zoeken. Je loopt door het gebouw en vraagt collega's of ze iets hebben gezien. <br>
+            Je besluit om de toegangspas te zoeken. Je loopt door het gebouw en vraagt collega's of ze iets hebben gezien.<br>
             Na een tijdje zoeken, vind je een pas op de grond bij de ingang. Maar is dit echt de verloren pas, of heeft iemand hem hier expres neergelegd?
         </p>
+        <div class="lotOfText">
+            <button onclick="option1a()">
+                Je pakt de toegangspas op
+            </button>
+            <button onclick="option1b()">
+                Je laat de toegangspas liggen
+            </button>
+        </div>
     </div>
-    <div class="qa" id="option2">
+    <div class="qa" id="option1b">
+        <p>
+            Je besluit de pas niet op te rapen en kijkt in plaats daarvan om je heen. Iemand kan hem hier expres hebben neergelegd.<br>
+            Even later zie je een schaduw in de gang verdwijnen.<br>
+            Was dat de persoon die de pas hier heeft achtergelaten? Misschien moet je hem volgen...
+        </p>
+        <div class="lotOfText">
+            <button onclick="option1b1()">
+                Achtervolg hem
+            </button>
+            <button onclick="option1b2()">
+                Verander je gedachte en ga terug naar je kantoor
+            </button>
+        </div>
+    </div>
+    <div class="qa" id="option1b1">
+        <p>
+            Je besluit niet te aarzelen en zet de achtervolging in. De schaduwfiguur beweegt snel door de gang en lijkt precies te weten waar hij naartoe gaat.<br>
+            Net als je denkt dichterbij te komen, duikt hij een deur door. Je komt bij een kruispunt in de gang. Welke kant is hij opgegaan? Links of rechts?
+        </p>
+        <div class="lotOfText">
+            <button onclick="option1b1a()">
+                Naar links
+            </button>
+            <button onclick="option1b1b()">
+                Naar rechts
+            </button>
+        </div>
+    </div>
+    <div class="qa" id="option1b1a">
+        <p>
+            Je kiest ervoor naar links te gaan. De gang lijkt donkerder en nauwer, maar je hebt geen keuze. Je hoort voetstappen verderop, steeds luider. 
+            Na een paar bochten kom je bij een gesloten deur. Is de schaduwfiguur hier naar binnen gegaan? Of is het gewoon de stilte die je doet twijfelen?
+        </p>
+        <div class="lotOfText">
+            <button onclick="option1b1a1()">
+                Probeer de deur open te krijgen
+            </button>
+            <button onclick="terugNaarKruispunt()">
+                Keer terug naar het kruispunt
+            </button>
+        </div>
+    </div>
+    <div class="qa" id="option1b1b">
+        <p>
+            Je besluit naar rechts te gaan. De gang is breder en lijkt meer betreden te zijn, de voetstappen van de schaduwfiguur lijken echter te verdwijnen. 
+            Na een paar stappen voel je een koude rilling over je rug. Het lijkt alsof je in een valstrik bent gelopen, maar er is geen weg terug.
+        </p>
+        <div class="lotOfText">
+            <button onclick="option1b1b1()">
+                Ga verder
+            </button>
+            <button onclick="terugNaarKruispunt()">
+                Keer om en ga terug
+            </button>
+        </div>
+    </div>
+    <div class="qa" id="option1a">
+        <p>
+            Je raapt de toegangspas op en bekijkt hem goed. De naam op de pas komt overeen met de melding die je eerder kreeg.<br>
+            Maar net op dat moment voel je een tik op je schouder.<br>
+            Een beveiliger kijkt je streng aan. 'Waar heb je die pas gevonden?' vraagt hij. Wat ga je zeggen?
+        </p>
+    </div>
+    <div class="qa" id="badBadEnd">
         <p>
             De ongeautoriseerde persoon heeft al het data van het bedrijf gestolen.<br>
             Je bent ontslagen en krijgt geen ontslagvergoeding.
+        </p>
+    </div>
+    <div class="qa" id="option1b2">
+        <p>
+            Je twijfelt. Misschien is het beter om geen risico te nemen. Je keert terug naar je kantoor en gaat verder met je werk, maar een vreemd gevoel blijft hangen.<br>
+            Had je die persoon moeten volgen? Even later krijg je een bericht van de beveiliging: 'Onbevoegde toegang gemeld. Heb jij iets verdachts gezien?'<br>
+            Je aarzelt, maar besluit om niets te zeggen. Misschien was het niets, en bovendien wil je jezelf niet verdacht maken.<br>
+            De volgende dag hoor je dat er iets gestolen is uit het archief. De dader is nooit gevonden.
         </p>
     </div>
     <br>
