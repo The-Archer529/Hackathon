@@ -5,38 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QR code</title>
     <style>
-        .body {
+        body {
             font-family: Arial, sans-serif;
             text-align: center;
             background-color: #404040;
             color: #fff;
-            text-align: center;
             padding: 20px;
-        
+            min-height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
-        .text{
+        .text {
             max-width: 400px;
+            background-color: #333;
             margin: auto;
             border: 1px solid #ccc;
             padding: 20px;
             border-radius: 10px;
-            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-            align-items: center;
-            justify-content: center;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
         }
-        a{
+        a {
+            display: inline-block;
             background-color: #007bff;
-            text-align: center;
-            align-items: center;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        a:hover {
+            background-color: #0056b3;
         }
     </style>
 </head>
 <body>
     <div class="text">
-        <h1>gefeliciteerd</h1>
-        <p>je hebt de goede QR code gekozen</p>
-        <p>je moet altijd uitkijken met QR codes want je kan niet aan de QR code zien of ze velig zijn of niet. daarom kan je het beste nooit zomaar een QR scannen</p>
-        <p>je kan nu door naar het volgende level</p>
+        <h1>Gefeliciteerd!</h1>
+        <p>Je hebt de juiste QR-code gekozen.</p>
+        <p>Wees altijd voorzichtig met QR-codes. Je kunt niet direct zien of ze veilig zijn. Scan dus nooit zomaar een QR-code.</p>
+        <p>Je kunt nu door naar het volgende level.</p>
         <br>
         <a href="levelSelect.html">Terug</a>
     </div>
