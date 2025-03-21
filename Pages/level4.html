@@ -121,7 +121,39 @@
                 Ga verder
             </button>
             <button onclick="terugNaarKruispunt()">
-                Keer om en ga terug
+                Keer terug naar het kruispunt
+            </button>
+        </div>
+    </div>
+    <div class="qa" id="option1b1a1">
+        <p>
+            Je slaagt erin de deur open te krijgen en komt de kamer binnen. De schaduwfiguur staat daar, verrast dat je hem gevolgd bent. Hij kijkt naar de toegangspas in zijn hand,<br>
+            en voor een moment lijkt hij twijfelen of hij moet vluchten. Maar jij benaderd hem snel, en voordat hij kan reageren, heb je de pas uit zijn hand gerukt.<br>
+            Je hebt hem gepakt! Met de toegangspas in je bezit, kun je nu terug naar het bedrijf en de gestolen informatie veiligstellen. Je hebt je missie volbracht.
+        </p>
+        <div class="lotOfText">
+            <button onclick="Victory()">
+                Je hebt succesvol de toegangspas terug gekregen en aan je medewerker gegeven.
+            </button>
+        </div>
+    </div>
+    <div class="qa" id="Victory">
+        <p>
+            Je hebt een datalek succesvol gestopt!<br>
+            +100 punten
+        </p>
+    </div>
+    <div class="qa" id="terugNaarKruispunt">
+        <p>
+            Je gaat terug naar het kruispunt. Je staat weer bij de deur.<br>
+            Ga je naar links of naar rechts?
+        </p>
+        <div class="lotOfText">
+            <button onclick="option1b1a()">
+                Naar links
+            </button>
+            <button onclick="option1b1b()">
+                Naar rechts
             </button>
         </div>
     </div>
@@ -129,13 +161,26 @@
         <p>
             Je raapt de toegangspas op en bekijkt hem goed. De naam op de pas komt overeen met de melding die je eerder kreeg.<br>
             Maar net op dat moment voel je een tik op je schouder.<br>
-            Een beveiliger kijkt je streng aan. 'Waar heb je die pas gevonden?' vraagt hij. Wat ga je zeggen?
+            Een beveiliger kijkt je streng aan. 'Waar heb je die pas gevonden?' vraagt hij.
+        </p>
+        <div class="lotOfText">
+            <button onclick="gearresteerd()">
+                Je bent te nerveus om te praten
+            </button>
+        </div>
+    </div>
+    <div class="qa" id="gearresteerd">
+        <p>
+            De beveiliger pakt je armen en hij doet ze achter jouw rug en doet handboeien om je handen.<br>
+            Je bent gearresteerd en de beveiliger wil niet luisteren naar jouw verhaal.<br>
+            -50 punten
         </p>
     </div>
     <div class="qa" id="badBadEnd">
         <p>
             De ongeautoriseerde persoon heeft al het data van het bedrijf gestolen.<br>
-            Je bent ontslagen en krijgt geen ontslagvergoeding.
+            Je bent ontslagen en krijgt geen ontslagvergoeding.<br>
+            -50 punten
         </p>
     </div>
     <div class="qa" id="option1b2">
@@ -143,7 +188,16 @@
             Je twijfelt. Misschien is het beter om geen risico te nemen. Je keert terug naar je kantoor en gaat verder met je werk, maar een vreemd gevoel blijft hangen.<br>
             Had je die persoon moeten volgen? Even later krijg je een bericht van de beveiliging: 'Onbevoegde toegang gemeld. Heb jij iets verdachts gezien?'<br>
             Je aarzelt, maar besluit om niets te zeggen. Misschien was het niets, en bovendien wil je jezelf niet verdacht maken.<br>
-            De volgende dag hoor je dat er iets gestolen is uit het archief. De dader is nooit gevonden.
+            De volgende dag hoor je dat er iets gestolen is uit het archief. De dader is nooit gevonden.<br>
+            -50 punten
+        </p>
+    </div>
+    <div class="qa" id="option1b1b1">
+        <p>
+            Je besluit verder te gaan, maar de schaduwfiguur is sneller dan je had gedacht. Terwijl je de gang verder inloopt, zie je hem voor je een deur openen en verdwijnen.<br>
+            Je probeert hem in te halen, maar je merkt al snel dat de gang zich als een doolhof voor je opent. De schaduwfiguur heeft je afgeleid, en met de gestolen toegangspas ontsnapt<br>
+            hij in de diepte van het gebouw. Je hebt de strijd verloren, en nu is de informatie in gevaar.
+            -50 punten
         </p>
     </div>
     <br>
